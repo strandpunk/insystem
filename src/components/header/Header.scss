@@ -1,0 +1,32 @@
+.header-wrapper {
+
+    font-size: 20px;
+    padding: 3em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.header-company {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-tagline {
+    padding-top: 10px;
+    font-size: 2em;
+}
+
+.header-title {
+    padding-top: 2em;
+    font-size: 1em;
+}
+
+.header-logo {
+     width: 70px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
