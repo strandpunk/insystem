@@ -1,0 +1,101 @@
+.carouselContainer {
+    margin: 40px 0px 40px 0px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carouselWrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carouselContentWrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.carouselContent {
+    display: flex;
+    height: 100%;
+    transition: all 250ms linear;
+    -ms-overflow-style: none;
+    /* hide scrollbar in IE and Edge */
+    scrollbar-width: none;
+    /* hide scrollbar in Firefox */
+}
+
+/* hide scrollbar in webkit browser */
+.carouselContent::-webkit-scrollbar,
+.carousel-content::-webkit-scrollbar {
+    display: none;
+}
+
+.carouselContent>* {
+    width: 50%;
+    height: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.leftArrow,
+.rightArrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.leftArrow {
+    left: -58px;
+}
+
+.rightArrow {
+    right: -58px;
+}
+
+.dotsWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.dotsContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px; // Расстояние между точками
+    cursor: pointer;
+    transition: background-color 0.3s ease; // Плавное изменение цвета при наведении
+  }
+  
+  .dot.active {
+    background-color: whitesmoke; // Цвет активной точки
+  }
+  
+  .dot.disabled {
+    opacity: 0.5; // Прозрачность неактивных точек
+    cursor: not-allowed; // Курсор на неактивных точках
+  }
+  
