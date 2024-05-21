@@ -11,10 +11,10 @@ const Carousel = (props) => {
     setLength(children.length);
   }, [children]);
 
-  useEffect(() => {
-    console.log(children.length)
-    console.log(currentIndex)
-  })
+  // useEffect(() => {
+  //   console.log(children.length)
+  //   console.log(currentIndex)
+  // })
  
 
   const next = () => {
