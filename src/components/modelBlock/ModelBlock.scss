@@ -1,15 +1,26 @@
 .modelBlock-wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+
+
 }
 
-.canvSize {
-    width: 2000px;
-    height: 1000px;
+.modelBloack-canvas {
+    width: 800px;
+    height: 700px;
 
-    border: 1px solid gray;
+    //border: 1px solid gray;
+    // background-color: gray;
 
+    // background-image: url('../../../public/blueprint.jpg');
+    // background-repeat: no-repeat;
+    // background-size:contain ;
+}
 
+.modelBloack-text {
+    width: 300px;
+
+    font-size: 16px;
 }

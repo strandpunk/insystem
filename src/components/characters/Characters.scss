@@ -1,0 +1,38 @@
+.characters-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.characters-container {
+    width: 300px;
+
+}
+
+.characters-title {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.characters-text {
+    border-top: 3px solid #f3f3f3;
+}
+
+.characters-line {
+
+    background-color: #f3f3f3;
+    height: 8px;
+    width: 30%;
+    margin-bottom: 2em;
+
+}
+
+.characters-li {
+    line-height: 40px;
+    margin-top: 60px;
+    list-style-type:square ;
+}
+
+.characters-image {
+    
+}
