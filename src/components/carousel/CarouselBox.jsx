@@ -9,11 +9,16 @@ const Carousel = (props) => {
 
   useEffect(() => {
     setLength(children.length);
-    // console.log(children.length)
   }, [children]);
 
+  useEffect(() => {
+    console.log(children.length)
+    console.log(currentIndex)
+  })
+ 
+
   const next = () => {
-    if (currentIndex < (length / 2 - 1)) {
+    if (currentIndex < (length/2)) {
       setCurrentIndex(prevState => prevState + 1);
     }
   };
@@ -26,7 +31,7 @@ const Carousel = (props) => {
 
   const renderDots = () => {
     const dots = [];
-    for (let i = 0; i < length / 2; i++) {
+    for (let i = 0; i < ((length / 2) + 1); i++) {
       dots.push(
         <div
           key={i}
@@ -50,7 +55,7 @@ const Carousel = (props) => {
             {children}
           </div>
         </div>
-        <button onClick={next} className='rightArrow' disabled={currentIndex === (length / 2 - 1)}>
+        <button onClick={next} className='rightArrow' disabled={currentIndex  > (length / 2)}>
           &gt;
         </button>
       </div>
