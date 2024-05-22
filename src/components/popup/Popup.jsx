@@ -20,7 +20,6 @@ const Popup = ({ isOpen, onClose }) => {
     const handleKeyDown = (e) => {
         if (e.keyCode === 27) {
             onClose()
-            console.log(2123)
         }
     }
 
