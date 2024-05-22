@@ -16,7 +16,7 @@ function Content() {
         {/* <EModel /> */}
         <div className='conent-section'><Characters /></div>
         <div className='conent-section'><Usability /></div>
-        <div className='conent-section'><Reviews /></div>
+        <div><Reviews /></div>
       </div>
     </>
   );
