@@ -34,6 +34,8 @@ const Popup = ({ isOpen, onClose }) => {
                                 enableZoom={true}
                                 enablePan={true}
                                 enableRotate={true}
+                                minDistance={1} // Минимальное увеличение
+                                maxDistance={10} // Максимальное увеличение
 
                             />
                             <Suspense fallback={null}>
